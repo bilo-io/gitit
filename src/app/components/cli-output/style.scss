@@ -1,0 +1,8 @@
+@import '../../../app.scss';
+
+.output {
+  background: rgba(black, 0.2);
+  width: calc(100% - 4em);
+  padding: 2em;
+  line-height: 2em;
+}

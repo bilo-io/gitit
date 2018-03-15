@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+//#!/usr/bin/env node
 const package = require('./package.json')
 const asciify = require('asciify')
 const asciifyImage = require('asciify-image')

@@ -1,0 +1,22 @@
+@import '../../../app.scss';
+
+$color: rgb(0, 202, 101);
+.page-content {
+  margin: auto;
+  max-width: 40rem;
+}
+
+.title{
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+  margin-top: 1rem;
+  color: $color;
+}

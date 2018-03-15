@@ -1,0 +1,24 @@
+@import '../../../app.scss';
+
+$color: rgb(0, 202, 101);
+#command-input {
+  font-family: 'Courier';
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  // border: 2px solid $color;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin: {
+    top: 2rem;
+    bottom: 2rem;
+  }
+  background: rgba(black, 0.4);
+  color: $color;
+
+  &:focus{
+    outline-color: rgba($color,0.3);
+    outline-width: 4px;
+    // outline-style: groove;
+  }
+}
