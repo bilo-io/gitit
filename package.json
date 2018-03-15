@@ -1,0 +1,29 @@
+{
+  "name": "gitit-cli",
+  "version": "0.0.1",
+  "description": "a cli that helps determine what a git command would do",
+  "main": "cli.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./cli.js",
+    "build": "chmod +x cli.js",
+    "cli:setup": "npm run build && npm link && npm install -g colors && npm install -g ./",
+    "cli:update": "npm install -g ./"
+  },
+  "keywords": [
+    "git"
+  ],
+  "bin": {
+    "gitit": "./cli.js"
+  },
+  "author": "Bilo Lwabona",
+  "license": "ISC",
+  "devDependencies": {
+    "asciify": "^1.3.5",
+    "asciify-image": "^0.1.1",
+    "cli": "^1.0.1",
+    "colors": "^1.2.1",
+    "commander": "^2.15.0",
+    "file-system": "^2.2.2"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "add": {
+    "effect": "stages changes in current local repo"
+  },
+  "clone": {
+    "effect": "clones git repository"
+  },
+  "commit": {
+    "effect": "commits staged changes"
+  },
+  "diff": {
+    "effect": "shows the file difference between your current work and last commit",
+    "args": "for a specific file"
+  },
+  "init": {
+    "effect": "initializes an empty git repository"
+  },
+  "pull": {
+    "effect": "pulls latest changes of current branch"
+  },
+  "push": {
+    "effect": "push latest committed changes to remote"
+  },
+  "stash": {
+    "effect": "puts unstaged changes aside"
+  },
+  "status": {
+    "effect": "prints the status of your local git branch (including which files are staged, deleted, modified, etc.)"
+  }
+}
