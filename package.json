@@ -8,7 +8,9 @@
     "start": "node ./cli.js",
     "build": "chmod +x cli.js",
     "cli:setup": "npm run build && npm link && npm install -g colors && npm install -g ./",
-    "cli:update": "npm install -g ./"
+    "cli:update": "npm install -g ./",
+    "deploy": "npm unlink && npm build && npm publish",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "git"
