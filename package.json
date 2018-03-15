@@ -1,6 +1,6 @@
 {
   "name": "gitit-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a cli that helps determine what a git command would do",
   "main": "cli.js",
   "scripts": {

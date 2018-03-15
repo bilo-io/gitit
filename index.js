@@ -1,6 +1,6 @@
 const commands = require('./lib/gitCommands.json')
 
-export const gititOutput = (commandArgs) => {
+const gititOutput = (commandArgs) => {
     console.log('printing: ', commandArgs)
     // console.log('commands: ', commands)
     let output = commandArgs.join(' ')
@@ -10,10 +10,11 @@ export const gititOutput = (commandArgs) => {
     return output
 }
 
-export const gitit = (command) => {
+const gitit = (command) => {
     return gititOutput(command.split(' '))
 }
 
 module.exports = {
-    gitit: gitit
+    gitit,
+    gititOutput
 }
