@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import React, { Component } from 'react'
 import CliOutput from '../../components/cli-output'
 import CliInput from '../../components/cli-input'
-import gitLogo from '../../../img/gitlogo.png'
-import { gitit } from '../../../../lib/gitit'
+import gitLogo from '../../img/gitlogo.png'
+import { gitit } from '../../../lib/gitit'
 
 import {
     myAction
@@ -40,7 +40,7 @@ export class Home extends Component {
         return (
             <div className='page page-padded'>
                 <div className='page-content'>
-                    <div className='logo'><img className='logo' src={gitLogo} /></div>
+                    <div className='logo'><img className='logo' s={gitLogo} /></div>
                     <div className='title'>gitit</div>
                     <CliInput value={command} onChange={ (value) => this.setState({ command: value})} />
                     <CliOutput content={ command ? gitit(command.split(' ').slice(1).join(' ')) : 'type a git command and see what happens'} />

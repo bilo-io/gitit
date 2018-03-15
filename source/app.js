@@ -6,7 +6,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 // Pages
 import Home from './pages/home';
 
-require('../app.scss');
+require('./app.scss');
 
 export default class App extends React.Component {
     render() {

@@ -1,4 +1,4 @@
-@import '../../../app.scss';
+@import '../../app.scss';
 
 $color: rgb(0, 202, 101);
 .page-content {
@@ -14,8 +14,8 @@ $color: rgb(0, 202, 101);
 }
 
 .logo {
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   margin: auto;
   margin-top: 1rem;
   color: $color;

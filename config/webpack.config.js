@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var Visualizer = require('webpack-visualizer-plugin');
 var path = require('path');
 var DIST = path.resolve(__dirname, '../demo/');
-var SRC = path.resolve(__dirname, '../src/');
+var SRC = path.resolve(__dirname, '../source/');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -20,7 +20,7 @@ var config = {
     // resolve: {
     //     modules: [
     //         path.resolve('./'),
-    //         path.resolve('./src/'),
+    //         path.resolve('./source/'),
     //         path.resolve('./node_modules')
     //     ]
     // },
@@ -41,7 +41,7 @@ var config = {
     },
     plugins: [
         new Visualizer({filename: './stats.html'}),
-        new HtmlWebpackPlugin({template: './src/index.html', filename: 'index.html', inject: 'body'}),
+        new HtmlWebpackPlugin({template: './source/index.html', filename: 'index.html', inject: 'body'}),
         // new CopyWebpackPlugin([
         //     {
         //         from: 'node_modules/highlight.js/styles/monokai.css',
